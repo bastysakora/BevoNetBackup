@@ -1,0 +1,26 @@
+2025-11-02 18:35:14,926 - INFO - ✅ Loaded comparison settings
+2025-11-02 18:35:14,927 - INFO - 🔍 Checking changes for 4 devices: ['core-switch-01', 'distribution-switch-01', 'arista-leaf-01', 'juniper-firewall-01']
+2025-11-02 18:35:14,927 - INFO - 📊 Only 1 backup(s) found for core-switch-01 - need at least 2 for comparison
+2025-11-02 18:35:14,928 - INFO - 📊 Only 1 backup(s) found for distribution-switch-01 - need at least 2 for comparison
+2025-11-02 18:35:14,928 - INFO - 📊 Comparing arista-leaf-01_20251101_101359.cfg vs arista-leaf-01_20251102_183304.cfg
+2025-11-02 18:35:14,928 - INFO - 🔍 Comparing configs for arista-leaf-01...
+2025-11-02 18:35:14,930 - INFO - 📝 Changes detected in arista-leaf-01
+2025-11-02 18:35:14,931 - INFO - 📊 Comparing juniper-firewall-01_20251101_101356.cfg vs juniper-firewall-01_20251102_183302.cfg
+2025-11-02 18:35:14,931 - INFO - 🔍 Comparing configs for juniper-firewall-01...
+2025-11-02 18:35:14,932 - INFO - 📝 Changes detected in juniper-firewall-01
+2025-11-02 18:35:14,933 - INFO - 📄 Diff report generated: /Users/basty/PycharmProjects/BevoNetBackup/diff_report.html
+2025-11-10 20:15:53,193 - INFO - ✅ Loaded comparison settings
+2025-11-10 20:15:53,194 - INFO - 🔍 Checking changes for 4 devices: ['core-switch-01', 'distribution-switch-01', 'juniper-firewall-01', 'arista-leaf-01']
+2025-11-10 20:15:53,194 - INFO - 📊 Comparing core-switch-01_20251106_115758.cfg vs core-switch-01_20251110_201529.cfg
+2025-11-10 20:15:53,194 - INFO - 🔍 Comparing configs for core-switch-01...
+2025-11-10 20:15:53,195 - INFO - 📝 Changes detected in core-switch-01
+2025-11-10 20:15:53,196 - INFO - 📊 Comparing distribution-switch-01_20251107_003352.cfg vs distribution-switch-01_20251110_201531.cfg
+2025-11-10 20:15:53,196 - INFO - 🔍 Comparing configs for distribution-switch-01...
+2025-11-10 20:15:53,197 - INFO - 📝 Changes detected in distribution-switch-01
+2025-11-10 20:15:53,198 - INFO - 📊 Comparing juniper-firewall-01_20251106_115803.cfg vs juniper-firewall-01_20251107_003354.cfg
+2025-11-10 20:15:53,198 - INFO - 🔍 Comparing configs for juniper-firewall-01...
+2025-11-10 20:15:53,200 - INFO - 📝 Changes detected in juniper-firewall-01
+2025-11-10 20:15:53,200 - INFO - 📊 Comparing arista-leaf-01_20251107_003356.cfg vs arista-leaf-01_20251110_201535.cfg
+2025-11-10 20:15:53,200 - INFO - 🔍 Comparing configs for arista-leaf-01...
+2025-11-10 20:15:53,201 - INFO - 📝 Changes detected in arista-leaf-01
+2025-11-10 20:15:53,203 - INFO - 📄 Diff report generated: /Users/basty/PycharmProjects/BevoNetBackup/diff_report.html

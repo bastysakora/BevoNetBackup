@@ -1,0 +1,24 @@
+{
+  "device": "core-switch-01",
+  "config_file": "config_updates/core-switch-01-update.cfg",
+  "timestamp": "2025-11-04T10:36:24.643638",
+  "commands_deployed": [
+    "interface GigabitEthernet0/2",
+    "description New Server Interface",
+    "switchport access vlan 10",
+    "switchport mode access",
+    "spanning-tree portfast",
+    "no shutdown",
+    "interface GigabitEthernet0/3",
+    "description New Uplink Interface",
+    "switchport mode trunk",
+    "switchport trunk native vlan 999",
+    "no shutdown",
+    "vlan 30",
+    "name New_VLAN_30",
+    "ntp server 10.1.1.20",
+    "end"
+  ],
+  "output": "Simulated deployment successful",
+  "type": "mock_deployment"
+}

@@ -1,0 +1,16 @@
+{
+  "success": [
+    {
+      "name": "deployment-switch-01",
+      "host": "192.168.200.10"
+    },
+    {
+      "name": "deployment-router-01",
+      "host": "192.168.200.11"
+    }
+  ],
+  "failed": [],
+  "timestamp": "2025-11-10T22:48:53.731195",
+  "total_devices": 2,
+  "type": "mock_backup"
+}

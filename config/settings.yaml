@@ -1,0 +1,13 @@
+backup:
+  backup_dir: "./backups"
+  git_enabled: false  # Set to true after we test basics
+  git_auto_commit: false
+
+comparison:
+  ignore_lines:
+    - "! Last configuration change"
+    - "! NVRAM config last updated"
+    - "!Time:"
+
+notification:
+  email_enabled: false

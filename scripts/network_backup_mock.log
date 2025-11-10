@@ -1,0 +1,2 @@
+2025-11-01 10:10:36,794 - ERROR - ❌ Failed to load configs: [Errno 2] No such file or directory: 'config/devices.yaml'
+2025-11-01 10:10:36,795 - ERROR - Critical error: [Errno 2] No such file or directory: 'config/devices.yaml'

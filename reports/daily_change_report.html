@@ -1,0 +1,89 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Network Configuration Change Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+                .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+                h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+                .summary { background: #ecf0f1; padding: 15px; border-radius: 5px; margin: 20px 0; }
+                .device-summary { margin: 20px 0; padding: 15px; border: 1px solid #bdc3c7; border-radius: 5px; }
+                .device-header { background: #34495e; color: white; padding: 10px; margin: -15px -15px 15px -15px; border-radius: 3px 3px 0 0; }
+                .diff { border-collapse: collapse; width: 100%; font-family: monospace; font-size: 14px; }
+                .diff-add { background-color: #d4edda; color: #155724; }
+                .diff-remove { background-color: #f8d7da; color: #721c24; }
+                .diff-context { background-color: #f8f9fa; color: #6c757d; }
+                .diff-line { padding: 2px 10px; border-left: 3px solid transparent; }
+                .no-changes { color: #27ae60; font-weight: bold; }
+                .changes-found { color: #e74c3c; font-weight: bold; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>🛰️ Network Configuration Change Report</h1>
+                <p>Generated: 2025-11-10 20:15:35</p>
+        
+                <div class="summary">
+                    <h2>📊 Executive Summary</h2>
+                    <p><strong>Total Devices Checked:</strong> 4</p>
+                    <p><strong class="changes-found">Devices with Changes:</strong> 4</p>
+                    <p><strong class="no-changes">Devices Unchanged:</strong> 0</p>
+                </div>
+        
+                <div class="device-summary">
+                    <div class="device-header">
+                        <h2>📱 arista-leaf-01 - <span class="changes-found">CHANGES DETECTED 🔴</span></h2>
+                    </div>
+                    <p><strong>Change Count:</strong> 6 changes</p>
+                    <p><strong>Compared:</strong> arista-leaf-01_20251107_003356.cfg → arista-leaf-01_20251110_201535.cfg</p>
+            
+                    <table class="diff">
+                <tr class="diff-remove"><td class="diff-line">--- arista-leaf-01_20251107_003356.cfg</td></tr><tr class="diff-add"><td class="diff-line">+++ arista-leaf-01_20251110_201535.cfg</td></tr><tr class="diff-context"><td class="diff-line">@@ -1,6 +1,6 @@</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> ! Arista EOS Configuration for arista-leaf-01</td></tr><tr class="diff-remove"><td class="diff-line">-! Generated: 2025-11-07 00:33:56.827169</td></tr><tr class="diff-add"><td class="diff-line">+! Generated: 2025-11-10 20:15:35.132253</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> hostname arista-leaf-01</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line">@@ -8,7 +8,7 @@</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> interface Management1</td></tr><tr class="diff-context"><td class="diff-line">    description Management Interface</td></tr><tr class="diff-remove"><td class="diff-line">-   ip address 192.168.1.16/24</td></tr><tr class="diff-add"><td class="diff-line">+   ip address 192.168.1.13/24</td></tr><tr class="diff-context"><td class="diff-line">    no shutdown</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> interface Ethernet1</td></tr>
+                    </table>
+                
+                </div>
+            
+                <div class="device-summary">
+                    <div class="device-header">
+                        <h2>📱 distribution-switch-01 - <span class="changes-found">CHANGES DETECTED 🔴</span></h2>
+                    </div>
+                    <p><strong>Change Count:</strong> 8 changes</p>
+                    <p><strong>Compared:</strong> distribution-switch-01_20251107_003352.cfg → distribution-switch-01_20251110_201531.cfg</p>
+            
+                    <table class="diff">
+                <tr class="diff-remove"><td class="diff-line">--- distribution-switch-01_20251107_003352.cfg</td></tr><tr class="diff-add"><td class="diff-line">+++ distribution-switch-01_20251110_201531.cfg</td></tr><tr class="diff-context"><td class="diff-line">@@ -1,6 +1,6 @@</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> ! Cisco IOS Configuration for distribution-switch-01</td></tr><tr class="diff-remove"><td class="diff-line">-! Generated: 2025-11-07 00:33:52.970900</td></tr><tr class="diff-add"><td class="diff-line">+! Generated: 2025-11-10 20:15:31.169044</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> version 15.2</td></tr><tr class="diff-context"><td class="diff-line"> service timestamps debug datetime msec</td></tr><tr class="diff-context"><td class="diff-line">@@ -23,7 +23,7 @@</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> interface GigabitEthernet0/0</td></tr><tr class="diff-context"><td class="diff-line">  description Management Interface</td></tr><tr class="diff-remove"><td class="diff-line">- ip address 192.168.1.10 255.255.255.0</td></tr><tr class="diff-add"><td class="diff-line">+ ip address 192.168.1.50 255.255.255.0</td></tr><tr class="diff-context"><td class="diff-line">  negotiation auto</td></tr><tr class="diff-context"><td class="diff-line">  no shutdown</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line">@@ -35,7 +35,7 @@</td></tr><tr class="diff-context"><td class="diff-line">  no shutdown</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> interface Vlan1</td></tr><tr class="diff-remove"><td class="diff-line">- ip address 10.1.1.191 255.255.255.0</td></tr><tr class="diff-add"><td class="diff-line">+ ip address 10.1.1.250 255.255.255.0</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> line con 0</td></tr><tr class="diff-context"><td class="diff-line">  logging synchronous</td></tr>
+                    </table>
+                
+                </div>
+            
+                <div class="device-summary">
+                    <div class="device-header">
+                        <h2>📱 juniper-firewall-01 - <span class="changes-found">CHANGES DETECTED 🔴</span></h2>
+                    </div>
+                    <p><strong>Change Count:</strong> 6 changes</p>
+                    <p><strong>Compared:</strong> juniper-firewall-01_20251106_115803.cfg → juniper-firewall-01_20251107_003354.cfg</p>
+            
+                    <table class="diff">
+                <tr class="diff-remove"><td class="diff-line">--- juniper-firewall-01_20251106_115803.cfg</td></tr><tr class="diff-add"><td class="diff-line">+++ juniper-firewall-01_20251107_003354.cfg</td></tr><tr class="diff-context"><td class="diff-line">@@ -1,5 +1,5 @@</td></tr><tr class="diff-context"><td class="diff-line"> # Juniper JunOS Configuration for juniper-firewall-01</td></tr><tr class="diff-remove"><td class="diff-line">-# Generated: 2025-11-06 11:58:03.167762</td></tr><tr class="diff-add"><td class="diff-line">+# Generated: 2025-11-07 00:33:54.016957</td></tr><tr class="diff-context"><td class="diff-line"> </td></tr><tr class="diff-context"><td class="diff-line"> system {</td></tr><tr class="diff-context"><td class="diff-line">     host-name juniper-firewall-01;</td></tr><tr class="diff-context"><td class="diff-line">@@ -30,7 +30,7 @@</td></tr><tr class="diff-context"><td class="diff-line">     ge-0/0/0 {</td></tr><tr class="diff-context"><td class="diff-line">         unit 0 {</td></tr><tr class="diff-context"><td class="diff-line">             family inet {</td></tr><tr class="diff-remove"><td class="diff-line">-                address 192.168.1.27/24;</td></tr><tr class="diff-add"><td class="diff-line">+                address 192.168.1.13/24;</td></tr><tr class="diff-context"><td class="diff-line">             }</td></tr><tr class="diff-context"><td class="diff-line">         }</td></tr><tr class="diff-context"><td class="diff-line">     }</td></tr>
+                    </table>
+                
+                </div>
+            
+                <div class="device-summary">
+                    <div class="device-header">
+                        <h2>📱 core-switch-01 - <span class="changes-found">CHANGES DETECTED 🔴</span></h2>
+                    </div>
+                    <p><strong>Change Count:</strong> 8 changes</p>
+                    <p><strong>Compared:</strong> core-switch-01_20251106_115758.cfg → core-switch-01_20251110_201529.cfg</p>
+            
+                    <table class="diff">
+                <tr class="diff-remove"><td class="diff-line">--- core-switch-01_20251106_115758.cfg</td></tr><tr class="diff-add"><td class="diff-line">+++ core-switch-01_20251110_201529.cfg</td></tr><tr class="diff-context"><td class="diff-line">@@ -1,6 +1,6 @@</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> ! Cisco IOS Configuration for core-switch-01</td></tr><tr class="diff-remove"><td class="diff-line">-! Generated: 2025-11-06 11:57:58.373481</td></tr><tr class="diff-add"><td class="diff-line">+! Generated: 2025-11-10 20:15:29.793222</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> version 15.2</td></tr><tr class="diff-context"><td class="diff-line"> service timestamps debug datetime msec</td></tr><tr class="diff-context"><td class="diff-line">@@ -23,7 +23,7 @@</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> interface GigabitEthernet0/0</td></tr><tr class="diff-context"><td class="diff-line">  description Management Interface</td></tr><tr class="diff-remove"><td class="diff-line">- ip address 192.168.1.45 255.255.255.0</td></tr><tr class="diff-add"><td class="diff-line">+ ip address 192.168.1.40 255.255.255.0</td></tr><tr class="diff-context"><td class="diff-line">  negotiation auto</td></tr><tr class="diff-context"><td class="diff-line">  no shutdown</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line">@@ -35,7 +35,7 @@</td></tr><tr class="diff-context"><td class="diff-line">  no shutdown</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> interface Vlan1</td></tr><tr class="diff-remove"><td class="diff-line">- ip address 10.1.1.167 255.255.255.0</td></tr><tr class="diff-add"><td class="diff-line">+ ip address 10.1.1.33 255.255.255.0</td></tr><tr class="diff-context"><td class="diff-line"> !</td></tr><tr class="diff-context"><td class="diff-line"> line con 0</td></tr><tr class="diff-context"><td class="diff-line">  logging synchronous</td></tr>
+                    </table>
+                
+                </div>
+            
+            </div>
+        </body>
+        </html>
+        

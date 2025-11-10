@@ -1,0 +1,10 @@
+{
+  "device": "test-switch-01",
+  "config_file": "/var/folders/xr/58w4kv9j56d35h4d3t5lq2d80000gn/T/tmp33yzaudz/deploy_config.txt",
+  "timestamp": "2025-11-10T20:11:03.491304",
+  "commands_deployed": [
+    "hostname test-switch-01"
+  ],
+  "output": "Simulated deployment successful",
+  "type": "mock_deployment"
+}

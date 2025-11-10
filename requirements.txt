@@ -1,0 +1,4 @@
+netmiko>=4.1.0
+PyYAML>=6.0
+gitpython>=3.1.0
+paramiko>=2.11.0

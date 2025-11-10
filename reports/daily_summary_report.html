@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Network Automation Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .summary { background: #ecf0f1; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        .section { margin: 25px 0; padding: 20px; border: 1px solid #bdc3c7; border-radius: 5px; }
+        .success { color: #27ae60; }
+        .warning { color: #f39c12; }
+        .error { color: #e74c3c; }
+        .device-list { font-family: monospace; background: #f8f9fa; padding: 10px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📈 Daily Network Automation Report</h1>
+        <p>Generated: 2025-11-10 21:57:05</p>
+
+        <div class="summary">
+            <h2>📊 Executive Summary</h2>
+            <p><strong>Backup Status:</strong> <span class="success">
+                4 successful, 0 failed
+            </span></p>
+            <p><strong>Configuration Changes:</strong> <span class="success">
+                0 devices with changes
+            </span></p>
+        </div>
+
+        <div class="section">
+            <h2>💾 Backup Results</h2>
+            <p><strong>Total Devices:</strong> 4</p>
+            <p><strong>Successful Backups:</strong> <span class="success">4</span></p>
+            <p><strong>Failed Backups:</strong> <span class="success">0</span></p>
+
+            <h3>✅ Successful Devices:</h3>
+            <div class="device-list">
+• core-switch-01 (192.168.1.10)<br>• distribution-switch-01 (192.168.1.11)<br>• juniper-firewall-01 (192.168.1.12)<br>• arista-leaf-01 (192.168.1.13)<br>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2>📁 Generated Files</h2>
+            <ul>
+                <li><strong>Backup Files:</strong> Check the 'backups/' directory for device configurations</li>
+                <li><strong>Detailed Change Report:</strong> <a href="reports/daily_change_report.html">reports/daily_change_report.html</a></li>
+                <li><strong>Change Summary:</strong> <a href="reports/change_summary.json">reports/change_summary.json</a></li>
+                <li><strong>Log Files:</strong> Check project root for various log files</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
